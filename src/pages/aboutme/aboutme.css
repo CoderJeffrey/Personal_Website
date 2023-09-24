@@ -1,0 +1,422 @@
+body {
+    font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+}
+
+section{
+    /* height: 500px; */
+    background-color: white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding: 50px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 600px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+li{
+    /* width: 200px; */
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 10px;
+}
+.small-h3{
+    font-size: 28px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.hero-text{
+    margin-left: 40px;
+    margin-bottom: 200px;
+}
+
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #ef744b;
+}
+
+
+.button:active{
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.typing-container{
+   margin-bottom: 8px;
+}
+
+.socials{
+    padding-bottom: 200px;
+    justify-content: space-between;
+}
+
+.socials div{
+    height: 75px;
+}
+
+.logo{
+    height: 90px;
+    margin: 10px;
+}
+
+.social-png{
+    margin: 20px;
+}
+
+
+.sub-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-left: 20px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headshot{
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 3px 3px 25px rgb(216, 215, 215);
+    margin: 10px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;   
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: rgba(228, 228, 228, 0.752);
+}
+
+.about-me-button{
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger{
+  display: none;
+}
+
+#about-me-tag{
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding: 0%;
+  height: 110px;
+}
+  /* --------------------- */
+.css-typing div p {
+    font-size: 25px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+  }
+  
+  .css-typing div:nth-child(1) p{
+    /* width: 7em; */
+    animation: 
+      typing1 2s steps(40, end);
+    animation-fill-mode: forwards;
+    }
+
+  @keyframes typing1{
+      0% {
+        width: 0;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        width: 7.3em;
+        border: none;
+      }
+  }
+
+
+  .css-typing div:nth-child(2) p{
+    font-size: 24px;
+    width: 21em;
+    opacity: 0;
+    animation: 
+      typing2 2s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes typing2{
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+
+
+  .css-typing div:nth-child(3) p{
+    font-size: 20px;
+    width: 28em;
+    opacity: 0;
+    animation: 
+      typing2 2s steps(40, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes typing2{
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+
+  @keyframes blink-caret{
+    from, to {border-color: transparent;}
+    50% {border-color: blue;}
+  } 
+
+
+
+@media only screen and (max-width: 1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self:flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #222431;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    
+    ul.show{
+        display: block;
+    }
+    
+    .logo{
+        display: none;
+    }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  background-color: #1c1d25;
+  color: white;
+  font-size: 40px; 
+  padding: 20px;
+  margin-left: 0px;
+}
+
+#interesting-tag{
+  text-align: center;
+  width: 100%;
+}
+
+#interesting-moments{
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set the slide container for the youtube video */
+.picframe{
+  display: none;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.picframe iframe{
+  width: 100%;
+}
+
+.picframe p{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.slideshow-container{
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(66, 66, 73);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.picframe .nba {
+  width: 100%;
+}
+
+.kdd_pic_container>.kdd_pic{
+  height: 300px;
+  margin: 10px;
+}
+
+.kdd_pic_container{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

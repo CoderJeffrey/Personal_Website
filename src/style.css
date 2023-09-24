@@ -1,0 +1,396 @@
+body {
+    font-family: 'Albert Sans', sans-serif;
+    margin: 0;
+}
+
+section{
+    /* height: 500px; */
+    background-color: white;
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px; 
+    padding: 50px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 600px;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+li{
+    /* width: 200px; */
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 10px;
+}
+.small-h3{
+    font-size: 28px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.hero-text{
+    margin-left: 40px;
+    margin-bottom: 200px;
+}
+
+.button{
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-top: 25px;
+}
+
+.button:hover{
+    background-color: #ef744b;
+}
+
+
+.button:active{
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.hero-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+
+    align-items: center;
+}
+
+.socials{
+    padding-bottom: 200px;
+    justify-content: space-between;
+}
+
+.socials div{
+    height: 75px;
+}
+
+.logo{
+    height: 90px;
+    margin: 20px;
+}
+
+.social-png{
+    margin: 20px;
+}
+
+
+.sub-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-left: 20px;
+}
+
+.sub-section-alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headshot{
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 3px 3px 25px rgb(216, 215, 215);
+    margin: 10px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-around;   
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+.project-image{
+    margin-top: 25px;
+    height: 200px;
+    border-radius: 25px;
+}
+
+hr {
+    margin-left: 20px;
+    height: 1px;
+    margin-right: 20px;
+    background-color: grey;
+    border: none;
+}
+
+.project-link{
+    text-decoration:underline;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: rgba(228, 228, 228, 0.752);
+}
+
+.about-me-button{
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.hamburger{
+    display: none;
+}
+
+.subtext-container{
+    text-align: center;
+    height: 130px;
+}
+
+.subtext-container p{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.ads-container{
+    height: 53px;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+}
+  /* --------------------- */
+.css-typing div p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+  }
+  
+  .css-typing div:nth-child(1) p{
+    /* width: 7em; */
+    animation: 
+      typing1 3s steps(40, end);
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+    }
+
+  @keyframes typing1{
+      0% {
+        width: 0;
+      }
+      39.9% {
+        border-right: .15em solid orange;
+      }
+      50% {
+        width: 10em;
+        border: none;
+      }
+      100% {
+        width: 0em;
+        border: none;
+      }
+  }
+
+
+  .css-typing div:nth-child(2) p{
+    font-size: 24px;
+    width: 21em;
+    opacity: 0;
+    animation: 
+      typing2 2s steps(40, end);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes typing2{
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+
+
+  .css-typing div:nth-child(3) p{
+    font-size: 20px;
+    width: 28em;
+    opacity: 0;
+    animation: 
+      typing2 2s steps(40, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes typing2{
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      99.9% {
+        border-right: .15em solid orange;
+      }
+      100% {
+        opacity: 1;
+        border: none;
+      }
+  }
+
+  @keyframes blink-caret{
+    from, to {border-color: transparent;}
+    50% {border-color: blue;}
+  } 
+  
+.container {
+    height: 200 px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: aqua;
+  }
+  .container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+
+
+@media only screen and (max-width: 1000px){
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self:flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #222431;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    
+    ul.show{
+        display: block;
+    }
+    
+    .logo{
+        display: none;
+    }
+}

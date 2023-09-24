@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./aboutme.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c65ba83922.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="../../assets/logo.png" alt="Jeffrey Liu's logo"/>
+            <ul id="nav-list">
+                <li><a class="nav-a" href="../../../index.html">Main Page</a></li>
+                <li><a class="nav-a" href="../projects/projects.html">Projects</a></li>
+                <li><a class="nav-a" href="#contact-me">Contact Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </section>
+
+    <section class="sub-section" id="about-me">
+        <div class="bio">  
+            <div id="about-me-tag">
+                <h1>About Me</h1>
+            </div>
+            <div class="css-typing">
+                <div class="typing-container">
+                    <p>
+                        I am Jeffrey Liu
+                    </p>
+                </div>
+                <div class="typing-container">
+                    <p>
+                        Skills: Full-Stack Development, Data Analytics
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="headshot-container">
+            <img class="headshot" src="../../assets/headshot.png" alt="Jeffrey Liu's Headshot">
+        </div>
+
+    </section>
+
+    <section class="sub-section" id="interesting-moments">
+        <div class="moments" id="firstMoment">  
+            <div id="interesting-tag">
+                <h1>Interesting Moments in My Life</h1>
+            </div>
+            <div class="slideshow-container">
+                <div class="picframe fade">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aufn4ZK_WHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <p>This is me selected as the young web developer representative for Wechat 10th Anniversary. 
+                        <br><br>
+                        Me acting myself (lol) as a web app developer 
+                    </p>
+                </div>
+
+                <div class="picframe fade">
+                    <img class = "nba" src="../../assets/nba.jpg">
+                    <p>This is me at NBA Court watching Lakers against 76ers. 
+                        <br><br>
+                        But I am a fan of Mavericks 🤣
+                    </p>
+                </div>
+
+                <div class="picframe fade">
+                    <div class="kdd_pic_container">
+                        <img class = "kdd_pic" src="../../assets/kdd1.jpg">
+                        <img class = "kdd_pic" src="../../assets/kdd2.jpg">
+                    </div>
+                    
+                    <p>This was me delivering my paper at ACM KDD Conference
+                        <br><br>
+                        And worked as a volunteer 🧐
+                    </p>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="addSlide(-1)">&#10094;</a> 
+                <a class="next" onclick="addSlide(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="curSlide(1)"></span>
+                <span class="dot" onclick="curSlide(2)"></span>
+                <span class="dot" onclick="curSlide(2)"></span>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+        <p>jliu5021@usc.edu</p>
+
+    </footer>
+
+    <script src="./aboutme.js"></script>
+</body>
+</html>
