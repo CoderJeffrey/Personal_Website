@@ -1,5 +1,7 @@
-# JeffreyLiu-Website
-My Personal Website. Built from Scratch! 📑
+# Jeffrey Liu Personal Website
+Welcome to the repository for my Personal Website. 
+
+100% Built from Scratch! 📑
 
 This is my personal website for Jeffrey Liu.  
 Using JS, HTML and CSS to build the whole website out of scratch.
